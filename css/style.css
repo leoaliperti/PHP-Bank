@@ -1,0 +1,457 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav .btn {
+  background-color: #0055a5;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.hero {
+  background-color: #2e9aff;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #0055a5;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.features {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* --- Stile per la pagina di login --- */
+
+.centered {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 40px;
+  color: #003366;
+}
+
+.login {
+  background-color: #ffffff;
+  padding: 30px;
+  max-width: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.label-login {
+  display: block;
+  margin-bottom: 15px;
+  color: #003366;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.label-login input[type="email"],
+.label-login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.btn-link {
+  color: #0055a5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.save-submit {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-submit:hover {
+  background-color: #003f7f;
+}
+
+/* --- Dashboard utente --- */
+
+.dashboard {
+  padding: 40px 0;
+}
+
+.dashboard-section {
+  margin-bottom: 40px;
+}
+
+.dashboard-section h3 {
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 8px;
+  font-size: 22px;
+}
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  color: #0055a5;
+}
+
+.card p {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+a.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background-color: #0055a5;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+a.button:hover {
+  background-color: #003f7f;
+}
+
+.card a.button {
+    display: inline-block;
+  margin: 10px auto 0;  /* margine sopra e automatico a sx/dx */
+  padding: 10px 16px;
+  background-color: #0055a5;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.form-container {
+  max-width: 450px;
+  margin: 60px auto 100px;
+  background: #f9f9f9;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.create-account-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003366;
+  font-size: 16px;
+}
+
+.create-account-form input[type="text"],
+.create-account-form input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.create-account-form input[type="text"]:focus,
+.create-account-form input[type="number"]:focus {
+  border-color: #0055a5;
+  outline: none;
+}
+
+.save-submit {
+  width: 100%;
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-submit:hover {
+  background-color: #003f7f;
+}
+
+.bonifico-form label {
+  font-weight: 600;
+  color: #003366;
+  margin-top: 12px;
+  display: block;
+}
+
+.bonifico-form input[type="text"],
+.bonifico-form select,
+.bonifico-form input[type="number"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.bonifico-form input[type="text"]:focus,
+.bonifico-form input[type="number"]:focus {
+  border-color: #0055a5;
+  outline: none;
+}
+
+hr.chiaro{
+  background-color: #7a7a7a;
+}
+
+dx {
+  display: inline-block;  /* così non va a capo */
+  text-align: right;      /* testo a destra */
+  width: 100%;            /* occupa tutta la larghezza del contenitore genitore */
+  box-sizing: border-box; /* evita problemi di larghezza */
+}
+
+h8 {
+  color:#52585e;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.cartacontainer
+{
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta-di-credito {
+  width: 360px;
+  height: 220px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #0d72b6, #00e5ff);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chip {
+  width: 50px;
+  height: 38px;
+  background:  linear-gradient(35deg, #FFA500, #FFC75F);
+  border-radius: 8px;
+}
+
+.numero-carta {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+
+.dati-carta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.proprietario {
+  font-size: 1em;
+}
+
+.credito {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+.logo-mastercard {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cerchi-container {
+  position: relative;
+  width: 60px;
+  height: 40px;
+}
+
+.cerchio {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.cerchio.rosso {
+  background-color: rgb(255, 49, 49);
+  left: 0;
+}
+
+.cerchio.giallo-trasp,
+.cerchio.giallo {
+  background-color: orange;
+  left: 20px;
+}
+
+.cerchio.giallo-trasp{
+    opacity: .4;
+}
+
+.marchio {
+  font-size: 0.6em;
+  color: #001d30;
+  margin-top: 3px;
+}
+
+.div-sotto-carta {
+  position: fixed;       /* oppure absolute, a seconda del contesto */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* se vuoi che parta subito sotto la carta, puoi regolare 'top' */
+  /* oppure se la carta ha un'altezza fissa, ad esempio 220px + padding */
+  top: calc(50vh + 110px); /* esempio: metà viewport + metà altezza carta */
+  
+  background-color: #fff; /* o il colore che preferisci */
+  overflow: auto;         /* se serve scroll interno */
+}
+
+canvas {
+  margin: 20px;
+  display: block;
+  max-height: 350px;
+  color:#37c42a;
+}
+  
+  
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registrazione utente</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="container-register">
+            <h1 class="centered">Registrazione</h1>
+            <form action="registrazione.php" method="POST">
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label>Password: <input type="password" name="password" required></label><br>
+                <label>Nome: <input type="text" name="name" required></label><br>
+                <label>Cognome: <input type="text" name="surname" required></label><br>
+                <label>Secondo nome: <notrequested>*facoltativo</notrequested><input type="text" name="secondName"></label><br>
+                <label>Username: <notrequested>*facoltativo</notrequested><input type="text" name="username"></label><br>
+                <label>Data di nascita: <input type="date" name="birth" required></label><br>
+                <label>Numero telefonico: <notrequested>*facoltativo</notrequested><input type="text" name="phone"></label>
+                <label>Gnere: <select name="genere" required>
+                    <option value="">-- Seleziona --</option>
+                    <option value="M">Maschio</option>
+                    <option value="F">Femmina</option>
+                    <option value="Altro">Altro</option>
+                    <option value="ND">Preferisco non dirlo</option>
+                </select></label> <br><br>
+                Sei gia registrato? Vai al <a href="../login" class="btn-link">login</a>.
+                <input type="submit" value="Registrati" class="save-submit">
+            </form>
+        </div>
+    </body>
+</html>
+

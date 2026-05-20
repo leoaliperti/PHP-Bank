@@ -1,0 +1,12 @@
+FAR FUNZIONARE I BONIFICI (dal principale agli altri fa il contrario no, da rispoarmio a online aggiunge ma non toglie )
+IBAN AUTOMATICO
+GETIONE CONTO
+
+
+pagina html con solo elementi 
+
+il corpo lo fo stampare con un api
+
+chiedo a php php lo rende json 
+
+poi stampo il json dinamicamente

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="centered">Accedi</h1>
+            <div class="login">
+                <form action="login.php" method="post">
+                    <label class="label-login">Email:
+                        <input type="email" name="email" placeholder="Inserisci la tua email" required>
+                    </label><br>
+
+                    <label class="label-login">Password:
+                        <input type="password" name="password" placeholder="Inserisci la tua password" required>
+                    </label class="label-login"><br>
+
+                    <label>
+                        <input type="checkbox" name="remember" value="1">
+                    </label>Ricordami<br>
+
+                    Non sei registrato? Fallo subito! <a href="../registrazione" class="btn-link">Registrati</a>.
+                    <input type="submit" class="save-submit" value="Accedi">
+                    <button onclick="location.href='../'" class="save-submit">Torna alla pagina iniziale</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
